@@ -13,11 +13,7 @@ if(isset($_POST['submit'])){
    $pass=(isset($_POST["password"])?$_POST["password"]:"");
    $cpass=(isset($_POST["cpassword"])?$_POST["cpassword"]:"");
 
-   //$name = pg_escape_string($conexion, $_POST['user']);
-   //$email = pg_escape_string($conexion, $_POST['email']);
-   //$pass = pg_escape_string($conexion, md5($_POST['pass']));
-   //$cpass = pg_escape_string($conexion, md5($_POST['cpassw']));
-
+  
    //$select_users= pg_query($conexion, "SELECT * FROM usuario 
    //WHERE correo = '$name' AND password = '$pass'");
 
@@ -51,7 +47,7 @@ $sentencia->execute();
          $sentencia->bindParam(":correo",$email);
          $sentencia->execute();
          $message[] = "registro exitosó";
-         header("Location:/PuroEmpleo/acces/login.php");
+         header("Location:/WeblegalDocuments/acces/login.php");
       }
    }
 
