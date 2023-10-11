@@ -1,14 +1,15 @@
 <?php
+$server= "localhost";
+$database= "legal_docs";
+$user= "root";
+$password= "root";
 
-$servidor="localhost";
-$BaseDatos="legal_docs";
-$usuario="root";
-$password="root";
-
-try{
-    $conexion=new PDO("mysql:host=$servidor;dbname=$BaseDatos",$usuario,$password);
-}catch (Exception $ex){
-    echo $ex->getMessage();
+$conexion = mysqli_connect($server, $user, $password, $database);
+if(!$conexion) {
+    die("Algun error");
 }
+echo("Conectado");
+
+
 
 ?>

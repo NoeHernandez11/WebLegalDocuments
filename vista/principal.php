@@ -63,7 +63,7 @@
         </div>
         <div class="acceso_plataforma">
                <div class="btns_acceso">
-                 <a href="../login.php" class="btn__accinicio">Inicia Sesión</a>
+                 <a href="../acces/login.php" class="btn__accinicio">Inicia Sesión</a>
                  <a href="../register.php" class="btn__accregistro">Registrate</a>
                </div>
                 

@@ -1,9 +1,9 @@
 <?php
 //este es
-include 'config.php';
+("../config.php");
 session_start();
 //ocupa include ionc
-// controlador
+// controlador$controlador = new Login_Controlador();
 if($_POST){
 
     //$usuario = (isset($_POST['usuario'])) ? $_POST['usuario'] : "";
@@ -12,7 +12,7 @@ if($_POST){
     $usuario=$_POST['usuario'];
     $password=$_POST['password'];
 
-    $sentencia=$conexion->prepare("SELECT COUNT(*)
+    $sentencia= $conexion->prepare("SELECT COUNT(*)
     FROM usuario
     WHERE nombre_usuario=:usuario
     AND password=:password

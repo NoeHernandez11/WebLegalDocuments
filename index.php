@@ -1,3 +1,4 @@
  <?php 
- //session_start();
-  header("location:./vista/principal.php")?>
+  header("location:./vista/principal.php")
+
+?>

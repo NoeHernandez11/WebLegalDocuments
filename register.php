@@ -136,7 +136,7 @@ if(isset($message)){
 
         <a name="" id="" class="btn btn-primary" href="index.php" role="button">Home</a>
 
-        <P> ya tienes una cuenta? <a href="/PuroEmpleo/acces/login.php"> Inicia Sesion! </a></P>
+        <P> ya tienes una cuenta? <a href="/WeblegalDocuments/acces/login.php"> Inicia Sesion! </a></P>
         
         </form>
         </div>
